@@ -50,7 +50,7 @@ public class CFSecJpaTestStartupListener implements ApplicationContextAware {
     private CFSecJpaTestTestSchema testCFSec;
 
 
-	static final AtomicReference<ApplicationContext> arApplicationContext = new AtomicReference<>();
+	static final AtomicReference<ApplicationContext> arApplicationContext = new AtomicReference<>(null);
 
 	@Override
 	public void setApplicationContext(final ApplicationContext applicationContext) throws BeansException {
